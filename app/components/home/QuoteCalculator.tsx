@@ -1,6 +1,6 @@
 "use client";
 
-import type { ChangeEvent, FormEvent } from "react";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -26,8 +26,18 @@ type Quote = {
   serviceType: string;
   shipmentType: string;
 };
-type FormKey = keyof typeof formData;
-type FormValue = (typeof formData)[FormKey];
+const initialFormData = {
+  shipmentType: "",
+  origin: "",
+  destination: "",
+  weight: "",
+  dimensions: { length: "", width: "", height: "" },
+  cargoType: "",
+  serviceType: "",
+  insurance: false,
+};
+type FormKey = keyof typeof initialFormData;
+type FormValue = (typeof initialFormData)[FormKey];
 
 export default function QuoteCalculator() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -514,7 +524,7 @@ export default function QuoteCalculator() {
                       Quote Generated!
                     </h3>
                     <p className="text-slate-600">
-                      Here's your personalized shipping quote
+                      Here&apos;s your personalized shipping quote breakdown.
                     </p>
                   </div>
 

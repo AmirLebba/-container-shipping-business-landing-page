@@ -3,17 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Menu,
-  X,
-  Package,
-  Ship,
-  Plane,
-  Truck,
-  MapPin,
-  Phone,
-  Mail,
-} from "lucide-react";
+import { Menu, X, Package, Ship, Plane, Truck } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,7 +72,7 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   className={`font-medium transition-colors duration-200 ${
-                    isScrolled ? "text-slate-600" : "text-blue-600/100"
+                    isScrolled ? "text-slate-600" : "text-black"
                   }`}
                 >
                   {item.name}
@@ -109,7 +99,7 @@ export default function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`lg:hidden p-2 rounded-lg transition-colors duration-200 ${
-                isScrolled ? "text-slate-600" : "text-navy-900"
+                isScrolled ? "text-slate-600" : "text-black"
               }`}
             >
               {isMenuOpen ? (
@@ -129,7 +119,7 @@ export default function Header() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="lg:hidden bg-white border-t border-slate-200"
+              className="lg:hidden bg-white border-t border-slate-200 p-3"
             >
               <div className="container-custom py-6">
                 <nav className="flex flex-col space-y-4">
@@ -190,7 +180,6 @@ export default function Header() {
           )}
         </AnimatePresence>
       </header>
-      
     </>
   );
 }
