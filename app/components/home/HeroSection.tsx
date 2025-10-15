@@ -1,7 +1,7 @@
 "use client";
 
 import type { FormEvent } from "react";
-import { useState} from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -36,7 +36,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center hero-bg overflow-hidden pt-20 p-15">
+    <section className="relative min-h-screen flex items-center justify-center hero-bg bg-cover overflow-x-hidden pt-20 p-15 ">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 bg-black/30"></div>
 
@@ -58,7 +58,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-4xl lg:text-4xl hero-title h-30 font-bold text-white  leading-snug">
+            <h1 className="text-4xl lg:text-4xl  h-30 font-bold text-white  overflow-hidden pt-5 ">
               <TextType
                 text={[
                   "Clearing the Way for Global Trade",
@@ -181,21 +181,6 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1 }}
-      >
-        <div className="flex flex-col items-center space-y-2 text-white/70">
-          <span className="text-sm">Scroll to explore</span>
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce"></div>
-          </div>
-        </div>
-      </motion.div>
     </section>
   );
 }

@@ -8,7 +8,7 @@ import ClientLogos from "@/app/components/home/ClientLogos";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
       <HeroSection />
       <ServicesOverview />
       <TrackingInterface />

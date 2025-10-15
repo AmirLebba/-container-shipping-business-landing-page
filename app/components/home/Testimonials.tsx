@@ -169,14 +169,14 @@ export default function Testimonials() {
             {/* Navigation Buttons */}
             <button
               onClick={handlePrevious}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-slate-50 transition-colors duration-200"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-slate-50 transition-colors duration-200"
             >
               <ChevronLeft className="w-6 h-6 " />
             </button>
 
             <button
               onClick={handleNext}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-slate-50 transition-colors duration-200"
+              className="absolute right-1 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-slate-50 transition-colors duration-200"
             >
               <ChevronRight className="w-6 h-6 " />
             </button>
