@@ -282,10 +282,10 @@ export default function Services() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-4xl lg:text-6xl font-bold  mb-6">
                 Our Services
               </h1>
-              <p className="text-xl text-slate-200 max-w-3xl mx-auto">
+              <p className="text-xl  max-w-3xl mx-auto">
                 Comprehensive logistics solutions designed to streamline your
                 supply chain, reduce costs, and improve efficiency across all
                 modes of transportation.
@@ -307,7 +307,7 @@ export default function Services() {
                   onClick={() => setActiveService(service.id as ServiceKey)}
                   className={`flex items-center space-x-3 px-6 py-4 rounded-xl font-medium transition-all duration-300 ${
                     activeService === service.id
-                      ? "bg-navy-600 text-white shadow-lg"
+                      ? "bg-navy-600  shadow-lg"
                       : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                   }`}
                 >
@@ -333,7 +333,7 @@ export default function Services() {
                 <div className="bg-white rounded-2xl shadow-lg p-8">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-navy-600 to-ocean-500 rounded-xl flex items-center justify-center">
-                      <Icon className="w-8 h-8 text-white" />
+                      <Icon className="w-8 h-8 " />
                     </div>
                     <div>
                       <h2 className="text-3xl font-bold text-slate-900">
@@ -369,7 +369,7 @@ export default function Services() {
                     <div className="space-y-4">
                       {currentService.process.map((step, index) => (
                         <div key={index} className="flex items-start space-x-4">
-                          <div className="w-8 h-8 bg-navy-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
+                          <div className="w-8 h-8 bg-navy-600  rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
                             {step.step}
                           </div>
                           <div>
@@ -409,7 +409,7 @@ export default function Services() {
                 </div>
 
                 {/* Pricing */}
-                <div className="bg-gradient-to-br from-navy-600 to-ocean-600 rounded-2xl p-6 text-white">
+                <div className="bg-gradient-to-br from-navy-600 to-ocean-600 rounded-2xl p-6 ">
                   <h3 className="text-xl font-bold mb-6">Pricing</h3>
                   <div className="space-y-4">
                     {Object.entries(currentService.pricing).map(
@@ -418,7 +418,7 @@ export default function Services() {
                           key={key}
                           className="flex justify-between items-center"
                         >
-                          <span className="text-slate-200 capitalize">
+                          <span className=" capitalize">
                             {key
                               .replace("_", " ")
                               .replace("fcl", "FCL")
@@ -430,7 +430,7 @@ export default function Services() {
                     )}
                   </div>
                   <div className="mt-6 pt-6 border-t border-white/20">
-                    <p className="text-sm text-slate-200 mb-4">
+                    <p className="text-sm  mb-4">
                       Prices vary based on route, season, and service level
                     </p>
                     <button className="w-full bg-white text-navy-600 font-semibold py-3 px-4 rounded-lg hover:bg-slate-100 transition-colors duration-200">
@@ -445,13 +445,13 @@ export default function Services() {
                     Quick Actions
                   </h3>
                   <div className="space-y-3">
-                    <button className="w-full bg-ocean-600 hover:bg-ocean-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200">
+                    <button className="w-full bg-ocean-600 hover:bg-ocean-700  font-semibold py-3 px-4 rounded-lg transition-colors duration-200">
                       Track Shipment
                     </button>
                     <button className="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 px-4 rounded-lg transition-colors duration-200">
                       Download Brochure
                     </button>
-                    <button className="w-full border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200">
+                    <button className="w-full border-2 border-navy-600 text-navy-600 hover:bg-navy-600  font-semibold py-3 px-4 rounded-lg transition-colors duration-200">
                       Schedule Consultation
                     </button>
                   </div>
@@ -471,19 +471,19 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold  mb-6">
               Ready to Streamline Your Logistics?
             </h2>
-            <p className="text-xl text-slate-200 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl  mb-8 max-w-3xl mx-auto">
               Let our experts analyze your supply chain and create a customized
               solution that optimizes costs, reduces transit times, and improves
               efficiency.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-ocean-500 hover:bg-ocean-600 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200">
+              <button className="bg-ocean-500 hover:bg-ocean-600  font-semibold px-8 py-4 rounded-lg transition-colors duration-200">
                 Get Free Consultation
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-navy-900 font-semibold px-8 py-4 rounded-lg transition-colors duration-200">
+              <button className="border-2 border-white  hover:bg-white hover:text-navy-900 font-semibold px-8 py-4 rounded-lg transition-colors duration-200">
                 Calculate Shipping Costs
               </button>
             </div>

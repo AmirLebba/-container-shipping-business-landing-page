@@ -154,10 +154,10 @@ export default function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-4xl lg:text-6xl font-bold  mb-6">
                 Get In Touch
               </h1>
-              <p className="text-xl text-slate-200 max-w-3xl mx-auto">
+              <p className="text-xl  max-w-3xl mx-auto">
                 Ready to streamline your logistics? Our experts are here to help
                 you find the perfect shipping solution for your business needs.
               </p>
@@ -178,7 +178,7 @@ export default function ContactPage() {
               viewport={{ once: true }}
             >
               <div className="w-16 h-16 bg-gradient-to-br from-navy-600 to-ocean-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Phone className="w-8 h-8 text-white" />
+                <Phone className="w-8 h-8 " />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4">Call Us</h3>
               <p className="text-slate-600 mb-4">
@@ -203,7 +203,7 @@ export default function ContactPage() {
               viewport={{ once: true }}
             >
               <div className="w-16 h-16 bg-gradient-to-br from-navy-600 to-ocean-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Mail className="w-8 h-8 text-white" />
+                <Mail className="w-8 h-8 " />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4">
                 Email Us
@@ -230,7 +230,7 @@ export default function ContactPage() {
               viewport={{ once: true }}
             >
               <div className="w-16 h-16 bg-gradient-to-br from-navy-600 to-ocean-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <MapPin className="w-8 h-8 text-white" />
+                <MapPin className="w-8 h-8 " />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4">
                 Visit Us
@@ -254,7 +254,7 @@ export default function ContactPage() {
                 onClick={() => setActiveTab("quote")}
                 className={`px-6 py-3 rounded-lg font-medium transition-colors duration-200 ${
                   activeTab === "quote"
-                    ? "bg-navy-600 text-white"
+                    ? "bg-navy-600 "
                     : "text-slate-600 hover:text-slate-900"
                 }`}
               >
@@ -264,7 +264,7 @@ export default function ContactPage() {
                 onClick={() => setActiveTab("general")}
                 className={`px-6 py-3 rounded-lg font-medium transition-colors duration-200 ${
                   activeTab === "general"
-                    ? "bg-navy-600 text-white"
+                    ? "bg-navy-600 "
                     : "text-slate-600 hover:text-slate-900"
                 }`}
               >
@@ -454,7 +454,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="bg-gradient-to-r from-navy-600 to-ocean-500 hover:from-navy-700 hover:to-ocean-600 disabled:from-slate-400 disabled:to-slate-500 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 flex items-center space-x-2"
+                      className="bg-gradient-to-r from-navy-600 to-ocean-500 hover:from-navy-700 hover:to-ocean-600 disabled:from-slate-400 disabled:to-slate-500  font-semibold py-3 px-8 rounded-lg transition-colors duration-200 flex items-center space-x-2"
                     >
                       {isSubmitting ? (
                         <>
@@ -595,7 +595,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <button className="w-full bg-navy-600 hover:bg-navy-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200">
+                <button className="w-full bg-navy-600 hover:bg-navy-700  font-semibold py-3 px-4 rounded-lg transition-colors duration-200">
                   Schedule Visit
                 </button>
               </motion.div>

@@ -371,10 +371,10 @@ export default function TrackingPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-4xl lg:text-6xl font-bold  mb-6">
                 Track Your Shipment
               </h1>
-              <p className="text-xl text-slate-200 max-w-3xl mx-auto">
+              <p className="text-xl  max-w-3xl mx-auto">
                 Get real-time updates on your cargo&apos;s location, status, and
                 estimated delivery time. Stay informed throughout the entire
                 shipping process.
@@ -397,7 +397,7 @@ export default function TrackingPage() {
               >
                 <div className="text-center mb-8">
                   <div className="w-16 h-16 bg-gradient-to-br from-navy-600 to-ocean-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Package className="w-8 h-8 text-white" />
+                    <Package className="w-8 h-8 " />
                   </div>
                   <h2 className="text-2xl font-bold text-slate-900 mb-2">
                     Track Your Shipment
@@ -427,7 +427,7 @@ export default function TrackingPage() {
                   <button
                     type="submit"
                     disabled={isLoading || !trackingNumber.trim()}
-                    className="w-full bg-gradient-to-r from-navy-600 to-ocean-500 hover:from-navy-700 hover:to-ocean-600 disabled:from-slate-400 disabled:to-slate-500 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center text-lg shadow-lg hover:shadow-xl"
+                    className="w-full bg-gradient-to-r from-navy-600 to-ocean-500 hover:from-navy-700 hover:to-ocean-600 disabled:from-slate-400 disabled:to-slate-500  font-semibold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center text-lg shadow-lg hover:shadow-xl"
                   >
                     {isLoading ? (
                       <>
@@ -605,9 +605,9 @@ export default function TrackingPage() {
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center ${
                             event.completed
-                              ? "bg-green-500 text-white"
+                              ? "bg-green-500 "
                               : event.active
-                              ? "bg-blue-500 text-white animate-pulse"
+                              ? "bg-blue-500  animate-pulse"
                               : "bg-slate-300 text-slate-600"
                           }`}
                         >
