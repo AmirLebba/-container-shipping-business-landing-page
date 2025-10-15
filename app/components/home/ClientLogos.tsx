@@ -51,7 +51,7 @@ export default function ClientLogos() {
               <div className="bg-slate-50 rounded-xl p-6 h-32 flex items-center justify-center group-hover:bg-slate-100 transition-colors duration-300 border border-slate-200 group-hover:border-slate-300">
                 <div className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-navy-500 to-ocean-500 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <span className="text-white font-bold text-lg">
+                    <span className=" font-bold text-lg">
                       {client.name.split(' ').map(word => word[0]).join('').substring(0, 2)}
                     </span>
                   </div>

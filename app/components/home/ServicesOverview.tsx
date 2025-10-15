@@ -44,7 +44,7 @@ export default function ServicesOverview() {
         "Door-to-Door",
         "Real-time Tracking",
       ],
-      color: "from-navy-600 to-navy-700",
+      color: "from-blue-500 to-blue-600",
       link: "/services#shipping",
     },
     {

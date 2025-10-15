@@ -45,7 +45,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3 ">
               <div className="w-12 h-12 bg-gradient-to-br from-navy-600 to-ocean-500 rounded-xl flex items-center justify-center">
-                <Ship className="w-6 h-6 text-white" />
+                <Ship className="w-6 h-6 " />
               </div>
               <div>
                 <h1

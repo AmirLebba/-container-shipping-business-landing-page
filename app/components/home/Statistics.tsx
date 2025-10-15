@@ -16,41 +16,47 @@ import {
 export default function Statistics() {
   const [stats, setStats] = useState([
     {
-      value: 0,
-      target: 50000,
+      value: 50_000,
+      target: 50_000,
       label: "Shipments Processed",
       icon: Package,
       suffix: "+",
     },
     {
-      value: 0,
+      value: 150,
       target: 150,
       label: "Countries Served",
       icon: Globe,
       suffix: "+",
     },
     {
-      value: 0,
+      value: 99.5,
       target: 99.5,
       label: "Success Rate",
       icon: TrendingUp,
       suffix: "%",
     },
     {
-      value: 0,
-      target: 2500,
+      value: 2_500,
+      target: 2_500,
       label: "Happy Clients",
       icon: Users,
       suffix: "+",
     },
     {
-      value: 0,
+      value: 14,
       target: 14,
       label: "Years Experience",
       icon: Award,
       suffix: "+",
     },
-    { value: 0, target: 24, label: "Hour Support", icon: Ship, suffix: "/7" },
+    {
+      value: 24,
+      target: 24,
+      label: "Hour Support",
+      icon: Ship,
+      suffix: "/7",
+    },
   ]);
 
   const [isVisible, setIsVisible] = useState(false);
